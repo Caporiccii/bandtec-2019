@@ -8,23 +8,21 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ConnectionTest {
-   private final String DRIVER = "com.mysql.jdbc.Driver";
-   private final  String url = "jdbc:mysql://localhost:3306/test";
-   private final  String user = "root";
-   private final  String password = "31012001200";
 
-   public Connection getConnection(){
-       try {
-           Class.forName(DRIVER);
-           
-             return DriverManager.getConnection(url, user, password);
-    
-       } catch (ClassNotFoundException | SQLException ex) {
-        throw new RuntimeException("test", ex);
-       }
-     
-   }
+public class ConnectionTest {
+   private static final String DRIVER = "com.mysql.jdbc.Driver";
+   private  static final  String url = "jdbc:mysql://localhost:3306/test";
+   private static final  String user = "root";
+   private static final  String password = "31012001200";
+
+    public static Connection getConnection() {
+        try {
+            Class.forName(DRIVER);
+            return DriverManager.getConnection(url, user, password);
+        } catch (ClassNotFoundException | SQLException ex) {
+            throw new RuntimeException("Erro na conexão: ", ex);
+        }
+    }
        public static void closeConnection(Connection con) {
      if (con!=null) 
            {try {
