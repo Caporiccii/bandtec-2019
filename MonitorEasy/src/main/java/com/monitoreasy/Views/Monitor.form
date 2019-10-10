@@ -48,6 +48,11 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="labelCPUToda" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="labelStatusTotem" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="labelStatusTotem2" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -79,7 +84,12 @@
                   <Component id="labelTotemResultado" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="labelTotem" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="330" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelStatusTotem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  <Component id="labelStatusTotem2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="298" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,6 +122,13 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labelTotemResultado">
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelStatusTotem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Status Totem"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelStatusTotem2">
     </Component>
   </SubComponents>
 </Form>

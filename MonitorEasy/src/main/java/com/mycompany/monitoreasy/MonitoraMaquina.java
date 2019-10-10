@@ -20,6 +20,8 @@ public class MonitoraMaquina {
     String cpu;
     String infoHardware;
     int nelem = 1;
+    double tempoAtivo;
+    String statusTotem;
 
     public String getMemory(GlobalMemory memoria) {
 
@@ -48,6 +50,25 @@ public class MonitoraMaquina {
     public String getInfoHardware(ComputerSystem nome) {
 String nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();
         return nameComputer;
+    }
+
+    public double getTempoAtivo() {
+   tempoAtivo  = sistemaInfo.getHardware().getProcessor().getSystemUptime();
+        
+        System.out.println(tempoAtivo);
+   
+        return tempoAtivo;
+    }
+    public String getStatusTotem (){
+    if(tempoAtivo <= 0)
+    {
+     statusTotem = "Totem Inativo";
+    }
+    else 
+    {
+           statusTotem = "Totem Ativo";
+    }
+        return statusTotem;
     }
 
     

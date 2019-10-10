@@ -13,7 +13,7 @@ public class DadosConexao {
         dataSource.setUrl("jdbc:mysql://localhost:3306/gaga?useTimezone=true&serverTimezone=UTC");
 // exemplo para MySql: "jdbc:mysql://localhost:3306/meubanco"
         dataSource.setUsername("root");
-        dataSource.setPassword("bandtec");
+        dataSource.setPassword("31012001200");
     }
 
     public BasicDataSource getDataSource() {

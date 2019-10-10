@@ -31,6 +31,8 @@ MonitoraMaquina monitor = new MonitoraMaquina();
         labelQuantidadeProcessos.setText(monitor.getProcessor(hardware.getProcessor()));
         labelCPUToda.setText(monitor.getCpu(hardware.getProcessor()));
         labelTotemResultado.setText(monitor.getInfoHardware(hardware.getComputerSystem()));
+          monitor.getTempoAtivo();
+          labelStatusTotem2.setText(monitor.getStatusTotem());
     }
 
     /**
@@ -50,6 +52,8 @@ MonitoraMaquina monitor = new MonitoraMaquina();
         labelCPUToda = new javax.swing.JLabel();
         labelTotem = new javax.swing.JLabel();
         labelTotemResultado = new javax.swing.JLabel();
+        labelStatusTotem = new javax.swing.JLabel();
+        labelStatusTotem2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,6 +64,8 @@ MonitoraMaquina monitor = new MonitoraMaquina();
         labelCPU.setText("CPU");
 
         labelTotem.setText("Nome Totem:");
+
+        labelStatusTotem.setText("Status Totem");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,7 +91,11 @@ MonitoraMaquina monitor = new MonitoraMaquina();
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(labelCPU)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(labelCPUToda)))
+                                .addComponent(labelCPUToda))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(labelStatusTotem)
+                                .addGap(18, 18, 18)
+                                .addComponent(labelStatusTotem2)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -108,7 +118,11 @@ MonitoraMaquina monitor = new MonitoraMaquina();
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelTotemResultado)
                     .addComponent(labelTotem))
-                .addContainerGap(330, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelStatusTotem, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelStatusTotem2))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
 
         pack();
@@ -156,6 +170,8 @@ MonitoraMaquina monitor = new MonitoraMaquina();
     private javax.swing.JLabel labelNomeMemoria;
     private javax.swing.JLabel labelProcessos;
     private javax.swing.JLabel labelQuantidadeProcessos;
+    private javax.swing.JLabel labelStatusTotem;
+    private javax.swing.JLabel labelStatusTotem2;
     private javax.swing.JLabel labelTotem;
     private javax.swing.JLabel labelTotemResultado;
     // End of variables declaration//GEN-END:variables
