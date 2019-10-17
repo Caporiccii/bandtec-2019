@@ -1,4 +1,4 @@
-package com.mycompany.monitoreasy;
+package com.monitoreasy;
 
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
@@ -13,26 +13,14 @@ public class MonitoraMaquina {
     SystemInfo sistemaInfo = new SystemInfo();
     OperatingSystem os = sistemaInfo.getOperatingSystem();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
-    long memoriaDisponivel;
-    long memoriaTotal;
-    String monitorMemoria;
-    String processoTotal;
+      String processoTotal;
     String cpu;
     String infoHardware;
     int nelem = 1;
     double tempoAtivo;
     String statusTotem;
 
-    public String getMemory(GlobalMemory memoria) {
-
-        memoriaDisponivel = memoria.getAvailable();
-        memoriaTotal = memoria.getTotal();
-        monitorMemoria = String.format("Total:%s Disponivel:%s",
-                FormatUtil.formatBytes(memoriaTotal),
-                FormatUtil.formatBytes(memoriaDisponivel));
-        return monitorMemoria;
-    }
-
+   
     public String getProcessor(CentralProcessor processo) {
         long[] processadorAtual = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
         processoTotal = "Estado processos:" + processadorAtual[0];
@@ -57,7 +45,7 @@ String nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();
         
         System.out.println(tempoAtivo);
    
-        return tempoAtivo;
+        return tempoAtivo ;
     }
     public String getStatusTotem (){
     if(tempoAtivo <= 0)
