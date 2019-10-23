@@ -58,6 +58,8 @@ public class Monitor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        labelStatusTotem2 = new javax.swing.JLabel();
         labelNomeMemoria = new javax.swing.JLabel();
         labelMemoria = new javax.swing.JLabel();
         labelProcessos = new javax.swing.JLabel();
@@ -67,76 +69,119 @@ public class Monitor extends javax.swing.JFrame {
         labelTotem = new javax.swing.JLabel();
         labelTotemResultado = new javax.swing.JLabel();
         labelStatusTotem = new javax.swing.JLabel();
-        labelStatusTotem2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        labelNomeMemoria.setText("Memoria:");
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setForeground(new java.awt.Color(0, 51, 255));
 
+        labelStatusTotem2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelStatusTotem2.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelNomeMemoria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelNomeMemoria.setForeground(new java.awt.Color(255, 255, 255));
+        labelNomeMemoria.setText("Memória:");
+
+        labelMemoria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelMemoria.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelProcessos.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelProcessos.setForeground(new java.awt.Color(255, 255, 255));
         labelProcessos.setText("Processos:");
 
-        labelCPU.setText("CPU");
+        labelQuantidadeProcessos.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelQuantidadeProcessos.setForeground(new java.awt.Color(255, 255, 255));
 
-        labelTotem.setText("Nome Totem:");
+        labelCPU.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelCPU.setForeground(new java.awt.Color(255, 255, 255));
+        labelCPU.setText("CPU:");
 
-        labelStatusTotem.setText("Status Totem");
+        labelCPUToda.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelCPUToda.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelTotem.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelTotem.setForeground(new java.awt.Color(255, 255, 255));
+        labelTotem.setText("Id Totem:");
+
+        labelTotemResultado.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelTotemResultado.setForeground(new java.awt.Color(255, 255, 255));
+
+        labelStatusTotem.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelStatusTotem.setForeground(new java.awt.Color(255, 255, 255));
+        labelStatusTotem.setText("Status:");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.PNG"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(109, 109, 109)
+                                .addComponent(labelTotem)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(labelTotemResultado))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(95, 95, 95)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(labelNomeMemoria)
+                                    .addComponent(labelStatusTotem)
+                                    .addComponent(labelProcessos)
+                                    .addComponent(labelCPU))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelStatusTotem2)
+                                    .addComponent(labelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(labelQuantidadeProcessos)
+                                    .addComponent(labelCPUToda))))
+                        .addGap(0, 114, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelTotem)
+                    .addComponent(labelTotemResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelStatusTotem, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelStatusTotem2))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelNomeMemoria)
+                    .addComponent(labelMemoria))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelProcessos)
+                    .addComponent(labelQuantidadeProcessos))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelCPU)
+                    .addComponent(labelCPUToda))
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(labelNomeMemoria)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelMemoria, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelTotem)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(labelTotemResultado))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelProcessos)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(labelQuantidadeProcessos))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelCPU)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(labelCPUToda))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelStatusTotem)
-                                .addGap(18, 18, 18)
-                                .addComponent(labelStatusTotem2)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelNomeMemoria)
-                    .addComponent(labelMemoria))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelProcessos)
-                    .addComponent(labelQuantidadeProcessos))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelCPU)
-                    .addComponent(labelCPUToda))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelTotemResultado)
-                    .addComponent(labelTotem))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelStatusTotem, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelStatusTotem2))
-                .addContainerGap(298, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -217,6 +262,8 @@ public class Monitor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labelCPU;
     private javax.swing.JLabel labelCPUToda;
     private javax.swing.JLabel labelMemoria;
