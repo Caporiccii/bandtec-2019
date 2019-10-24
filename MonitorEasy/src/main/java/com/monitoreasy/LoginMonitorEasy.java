@@ -21,7 +21,7 @@ public class LoginMonitorEasy extends javax.swing.JFrame {
      * Creates new form LoginMonitorEasy
      */
     public LoginMonitorEasy() {
-        mon.setEnabled(false);
+        mon.setVisible(false);
         initComponents();
     }
 
@@ -135,7 +135,7 @@ public class LoginMonitorEasy extends javax.swing.JFrame {
         username = Usuariotx.getText();
         password = Senhatx.getText();
         if (username.equals("ADM") && password.equals("ADM")) {
-            mon.setEnabled(true);
+            mon.setVisible(true);
             this.setEnabled(false);
         } else {
             mon.setEnabled(false);

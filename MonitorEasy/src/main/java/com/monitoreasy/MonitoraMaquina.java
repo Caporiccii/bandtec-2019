@@ -7,6 +7,7 @@ import oshi.hardware.GlobalMemory;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.OperatingSystem;
 import oshi.util.FormatUtil;
+import oshi.util.Util;
 
 public class MonitoraMaquina {
 
@@ -28,9 +29,10 @@ public class MonitoraMaquina {
     }
 
     public String getCpu(CentralProcessor media) {
-        double[] cpu2 = hardwareAbstracao.getProcessor().getSystemLoadAverage(nelem);
-
-        cpu = "Média da CPU:" + cpu2[0];
+        long[] prevTicks = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
+        Util.sleep(1000);
+    
+        cpu = String.format("Uso atual %.1f%%", media.getSystemCpuLoadBetweenTicks() * 100);
 
         return cpu;
     }

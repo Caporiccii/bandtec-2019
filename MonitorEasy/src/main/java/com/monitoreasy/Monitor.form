@@ -52,25 +52,25 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="356" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="labelNomeMemoria" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelStatusTotem" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelCPU" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelTotem" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="labelProcessos" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="labelStatusTotem" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="labelTotem" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelNomeMemoria" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelCPU" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -80,6 +80,10 @@
                               <Component id="labelCPUToda" alignment="0" min="-2" pref="249" max="-2" attributes="0"/>
                               <Component id="labelQuantidadeProcessos" min="-2" pref="274" max="-2" attributes="0"/>
                           </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="356" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="22" max="32767" attributes="0"/>
@@ -93,13 +97,13 @@
                   <Component id="jLabel1" min="-2" pref="61" max="-2" attributes="0"/>
                   <EmptySpace pref="49" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="labelTotem" min="-2" max="-2" attributes="0"/>
-                      <Component id="labelStatusTotem2" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="labelStatusTotem2" alignment="1" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="labelStatusTotem" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="labelStatusTotem" min="-2" pref="21" max="-2" attributes="0"/>
-                      <Component id="labelTotemResultado" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="labelTotemResultado" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="labelTotem" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="18" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
