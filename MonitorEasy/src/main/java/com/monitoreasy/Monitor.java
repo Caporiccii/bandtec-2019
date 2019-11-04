@@ -21,21 +21,19 @@ import oshi.util.FormatUtil;
  */
 public class Monitor extends javax.swing.JFrame {
 
-  //  MonitoraMaquina monitor = new MonitoraMaquina();
-   // private final HardwareAbstractionLayer hardware = sistemaInfo.getHardware();
-   
     private final MonitoraMaquina monitora;
+    private final StatusTotem status;
     private final SystemInfo systemInfo;
-       private final Memory memoria;
+    private final Memory memoria;
 
     public final void mostraDados() {
-        
+
         labelMemoria.setText(memoria.getMemory(systemInfo.getHardware().getMemory()));
         labelQuantidadeProcessos.setText(monitora.getProcessor(systemInfo.getHardware().getProcessor()));
         labelCPUToda.setText(monitora.getCpu(systemInfo.getHardware().getProcessor()));
         labelTotemResultado.setText(monitora.getInfoHardware(systemInfo.getHardware().getComputerSystem()));
-        monitora.getTempoAtivo();
-        labelStatusTotem2.setText(monitora.getStatusTotem());
+        status.getTempoAtivo();
+        labelStatusTotem2.setText(status.getStatusTotem());
     }
 
     /**
@@ -43,9 +41,10 @@ public class Monitor extends javax.swing.JFrame {
      */
     public Monitor() {
         monitora = new MonitoraMaquina();
-                systemInfo = new SystemInfo();
-                memoria = new Memory();
-                      initComponents();
+        systemInfo = new SystemInfo();
+        memoria = new Memory();
+        status = new StatusTotem();
+        initComponents();
         mostraDados();
     }
 
@@ -187,7 +186,9 @@ public class Monitor extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(119, Short.MAX_VALUE))
         );
 
         pack();

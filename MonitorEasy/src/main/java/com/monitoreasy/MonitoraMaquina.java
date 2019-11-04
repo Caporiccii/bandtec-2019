@@ -18,8 +18,6 @@ public class MonitoraMaquina {
     String cpu;
     String infoHardware;
     int nelem = 1;
-    double tempoAtivo;
-    String statusTotem;
 
    
     public String getProcessor(CentralProcessor processo) {
@@ -41,25 +39,4 @@ public class MonitoraMaquina {
 String nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();
         return nameComputer;
     }
-
-    public double getTempoAtivo() {
-   tempoAtivo  = sistemaInfo.getHardware().getProcessor().getSystemUptime();
-        
-        System.out.println(tempoAtivo);
-   
-        return tempoAtivo ;
-    }
-    public String getStatusTotem (){
-    if(tempoAtivo <= 0)
-    {
-     statusTotem = "Totem Inativo";
-    }
-    else 
-    {
-           statusTotem = "Totem Ativo";
-    }
-        return statusTotem;
-    }
-
-    
 }

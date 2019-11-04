@@ -1,0 +1,13 @@
+
+package com.monitoreasy;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+
+public class Statements {
+       public static void main(String[] args) {
+        ConexaoBanco con = new ConexaoBanco();
+        
+        JdbcTemplate jdbcTemplate = 
+          new JdbcTemplate(con.getDataSource());
+}}
