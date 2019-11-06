@@ -25,13 +25,15 @@ public class Monitor extends javax.swing.JFrame {
     private final StatusTotem status;
     private final SystemInfo systemInfo;
     private final Memory memoria;
+    private final Cpu cpu;
+    private final Processos processos;
+    private final InformacaoHardware informacaoHardware;
 
     public final void mostraDados() {
-
-        labelMemoria.setText(memoria.getMemory(systemInfo.getHardware().getMemory()));
-        labelQuantidadeProcessos.setText(monitora.getProcessor(systemInfo.getHardware().getProcessor()));
-        labelCPUToda.setText(monitora.getCpu(systemInfo.getHardware().getProcessor()));
-        labelTotemResultado.setText(monitora.getInfoHardware(systemInfo.getHardware().getComputerSystem()));
+        labelMemoria.setText(memoria.getMemory());
+        labelQuantidadeProcessos.setText(processos.getProcessor(systemInfo.getHardware().getProcessor()));
+        labelCPUToda.setText(cpu.getCpu(systemInfo.getHardware().getProcessor()));
+        labelTotemResultado.setText( informacaoHardware.getInfoHardware(systemInfo.getHardware().getComputerSystem()));
         status.getTempoAtivo();
         labelStatusTotem2.setText(status.getStatusTotem());
     }
@@ -44,6 +46,9 @@ public class Monitor extends javax.swing.JFrame {
         systemInfo = new SystemInfo();
         memoria = new Memory();
         status = new StatusTotem();
+        cpu = new Cpu();
+        processos = new Processos();
+        informacaoHardware = new InformacaoHardware();
         initComponents();
         mostraDados();
     }

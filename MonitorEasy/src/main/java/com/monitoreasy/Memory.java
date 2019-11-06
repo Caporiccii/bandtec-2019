@@ -10,8 +10,15 @@ public class Memory {
     long memoriaDisponivel;
     long memoriaTotal;
     String monitorMemoria;
+    private final SystemInfo systemInfo;
+    GlobalMemory memoria;
 
-    public String getMemory(GlobalMemory memoria) {
+    public Memory() {
+        systemInfo = new SystemInfo();
+        memoria = systemInfo.getHardware().getMemory();
+    }
+
+    public String getMemory() {
 
         memoriaDisponivel = memoria.getAvailable();
         memoriaTotal = memoria.getTotal();
