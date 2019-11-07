@@ -10,14 +10,16 @@ import oshi.hardware.CentralProcessor;
 import oshi.hardware.HardwareAbstractionLayer;
 
 public class Processos {
-
+LogMonitor logger = new LogMonitor();
     SystemInfo sistemaInfo = new SystemInfo();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
     String processoTotal;
 
     public String getProcessor(CentralProcessor processo) {
+   
         long[] processadorAtual = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
         processoTotal = "Estado processos:" + processadorAtual[0];
         return processoTotal;
-    }
-}
+      
+    
+    }}
