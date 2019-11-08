@@ -40,25 +40,18 @@
             <version>2.5.0</version>
         </dependency>
         
-        <!-- dependência do Mysql -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
-        </dependency>   
+      <dependency>
+           <groupId>com.microsoft.sqlserver</groupId>
+           <artifactId>mssql-jdbc</artifactId>
+           <version>7.2.2.jre8</version>
+       </dependency>  
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
     <version>2.12.1</version>
 </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.11.2</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
+           <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.12</version>

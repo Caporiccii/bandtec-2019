@@ -17,11 +17,11 @@ private Logger logger;
       try{  
           dataSource​ = new​ BasicDataSource();
         dataSource​.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dataSource​.setUrl("jdbc:sqlserver://srvgrupo.database.windows.net:1433=bdgrupo10");
+        dataSource​.setUrl("jdbc:sqlserver://srvgrupo.database.windows.net:1433;database=bdgrupo10");
         // quem for acessar do yoshi: localhost -> 10.3.2.180
         // quem for acessar do yoshi: gaga -> gaga-seunome
         
-        dataSource​.setUsername("191-2b-grupo10@bandtec.com.br");
+        dataSource​.setUsername("monitoreasy");
         dataSource​.setPassword("#Gfgrupo10b"); // ou sua senha
         
     }
