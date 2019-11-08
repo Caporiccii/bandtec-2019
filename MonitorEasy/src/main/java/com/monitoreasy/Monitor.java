@@ -28,6 +28,7 @@ public class Monitor extends javax.swing.JFrame {
     private final Cpu cpu;
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;
+    private final LogMonitor log;
 
     public final void mostraDados() {
         labelMemoria.setText(memoria.getMemory());
@@ -49,6 +50,7 @@ public class Monitor extends javax.swing.JFrame {
         cpu = new Cpu();
         processos = new Processos();
         informacaoHardware = new InformacaoHardware();
+        log = new LogMonitor();
         initComponents();
         mostraDados();
     }
@@ -236,6 +238,7 @@ public class Monitor extends javax.swing.JFrame {
                     @Override
                     public void windowOpened(WindowEvent arg0) {
                         monitor.mostraDados();
+                        
                         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
                     }
 
