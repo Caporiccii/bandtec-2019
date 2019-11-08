@@ -4,10 +4,11 @@
  * and open the template in the editor.
  */
 package com.monitoreasy;
-
+import org.apache.log4j.Logger;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import org.apache.log4j.Logger;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.GlobalMemory;
@@ -28,8 +29,8 @@ public class Monitor extends javax.swing.JFrame {
     private final Cpu cpu;
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;
-    private final LogMonitor log;
-
+    
+   Logger logger = Logger.getLogger(LogMonitor.class);
     public final void mostraDados() {
         labelMemoria.setText(memoria.getMemory());
         labelQuantidadeProcessos.setText(processos.getProcessor(systemInfo.getHardware().getProcessor()));
@@ -43,14 +44,15 @@ public class Monitor extends javax.swing.JFrame {
      * Creates new form Monitor
      */
     public Monitor() {
+       // Logger = logger;
         monitora = new MonitoraMaquina();
         systemInfo = new SystemInfo();
         memoria = new Memory();
         status = new StatusTotem();
         cpu = new Cpu();
-        processos = new Processos();
+        processos = new Processos(logger);
         informacaoHardware = new InformacaoHardware();
-        log = new LogMonitor();
+        
         initComponents();
         mostraDados();
     }
