@@ -7,9 +7,11 @@ import org.apache.log4j.PatternLayout;
 
 public class LogMonitor {
 
-    public static void main(String[] args) {
+    Logger logger;
+
+    public LogMonitor() {
+        logger = Logger.getLogger(LogMonitor.class);
         // cria objeto para utilização do logger
-        Logger logger = Logger.getLogger(LogMonitor.class);
         BasicConfigurator.configure();
 
         PatternLayout layout = new PatternLayout();
@@ -20,9 +22,11 @@ public class LogMonitor {
         fileAppender.setFile("applog3.txt");
         fileAppender.setLayout(layout);
         fileAppender.activateOptions();
-        logger.info("Marco");
-        logger.error("Fudeu");
+        logger.addAppender(fileAppender);
+    }
 
+    public Logger getLogger() {
+        return logger;
     }
 
 }
