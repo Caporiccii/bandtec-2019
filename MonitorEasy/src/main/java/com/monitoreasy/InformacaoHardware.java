@@ -5,6 +5,7 @@
  */
 package com.monitoreasy;
 
+import org.apache.log4j.Logger;
 import oshi.SystemInfo;
 import oshi.hardware.ComputerSystem;
 import oshi.hardware.HardwareAbstractionLayer;
@@ -16,12 +17,25 @@ import oshi.software.os.OperatingSystem;
  */
 public class InformacaoHardware {
 
+    Logger logger;
     SystemInfo sistemaInfo = new SystemInfo();
     OperatingSystem os = sistemaInfo.getOperatingSystem();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
+    String nameComputer;
+    public InformacaoHardware(Logger logger) {
+        this.logger = logger;
+    }
 
     public String getInfoHardware(ComputerSystem nome) {
-        String nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();
+        try{
+            logger.error("Capturando Informação do Hardware");
+         nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();
+        logger.info("Capturada com sucesso!!");
+        }
+        catch(Exception ex)
+        {
+            logger.error("Erro ao capturar Informação Hardware: " + ex);
+        }
         return nameComputer;
     }
 }

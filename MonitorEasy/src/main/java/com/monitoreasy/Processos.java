@@ -23,12 +23,13 @@ public class Processos {
 
     public String getProcessor(CentralProcessor processo) {
         try {
+            logger.debug("Capturando quantidade de processos");
             long[] processadorAtual = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
-            processoTotal = "Estado processos:" + processadorAtual[0];
+            processoTotal = "Quantidade de processos:" + processadorAtual[0];
 
-            logger.info(processoTotal);
+            logger.info("Capturado com sucesso!!");
         } catch (Exception ex) {
-            logger.error(ex);
+            logger.error("Erro ao capturar processos: " + ex);
         }
         return processoTotal;
     }

@@ -12,27 +12,25 @@ import oshi.SystemInfo;
  * @author marco.coelho
  */
 public class StatusTotem {
-    
-     SystemInfo sistemaInfo = new SystemInfo();
-        double tempoAtivo;
+
+    SystemInfo sistemaInfo = new SystemInfo();
+    double tempoAtivo;
     String statusTotem;
 
-     public double getTempoAtivo() {
-   tempoAtivo  = sistemaInfo.getHardware().getProcessor().getSystemUptime();
-        
+    public double getTempoAtivo() {
+        tempoAtivo = sistemaInfo.getHardware().getProcessor().getSystemUptime();
+
         System.out.println(tempoAtivo);
-   
-        return tempoAtivo ;
+
+        return tempoAtivo;
     }
-    public String getStatusTotem (){
-    if(tempoAtivo <= 0)
-    {
-     statusTotem = "Totem Inativo";
-    }
-    else 
-    {
-           statusTotem = "Totem Ativo";
-    }
+
+    public String getStatusTotem() {
+        if (tempoAtivo <= 0) {
+            statusTotem = "Totem Inativo";
+        } else {
+            statusTotem = "Totem Ativo";
+        }
         return statusTotem;
     }
 

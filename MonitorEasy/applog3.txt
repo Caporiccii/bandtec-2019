@@ -16,3 +16,11 @@ INFO    2019-11-08 21:30:46,304 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  -
 INFO    2019-11-08 21:30:46,304 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8542515
 INFO    2019-11-08 21:30:47,334 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 14,5%
 INFO    2019-11-08 21:30:47,334 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 14,5%
+INFO    2019-11-11 18:50:49,680 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:901296
+INFO    2019-11-11 18:50:50,726 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 7,6%
+INFO    2019-11-11 18:50:51,038 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:902218
+INFO    2019-11-11 18:50:52,042 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 16,4%
+INFO    2019-11-11 18:50:52,339 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:902890
+INFO    2019-11-11 18:50:52,339 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:902890
+INFO    2019-11-11 18:50:53,366 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 7,7%
+INFO    2019-11-11 18:50:53,366 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 7,7%

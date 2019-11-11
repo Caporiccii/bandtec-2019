@@ -12,7 +12,6 @@ import oshi.SystemInfo;
 
 public class Monitor extends javax.swing.JFrame {
 
-    private final MonitoraMaquina monitora;
     private final StatusTotem status;
     private final SystemInfo systemInfo;
     private final Memory memoria;
@@ -33,13 +32,12 @@ public class Monitor extends javax.swing.JFrame {
 
     public Monitor() {
         Logger log = logger.getLogger();
-        monitora = new MonitoraMaquina();
         systemInfo = new SystemInfo();
         memoria = new Memory();
         status = new StatusTotem();
         cpu = new Cpu(log);
         processos = new Processos(log);
-        informacaoHardware = new InformacaoHardware();
+        informacaoHardware = new InformacaoHardware(log);
 
         initComponents();
         mostraDados();
