@@ -1,0 +1,18 @@
+INFO    2019-11-08 21:19:00,194 [main] com.monitoreasy.LogMonitor  - Marco
+ERROR   2019-11-08 21:19:00,196 [main] com.monitoreasy.LogMonitor  - Perigo
+INFO    2019-11-08 21:27:52,027 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8296031
+ERROR   2019-11-08 21:27:52,028 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Perigo
+INFO    2019-11-08 21:27:53,424 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8297875
+ERROR   2019-11-08 21:27:53,426 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Perigo
+INFO    2019-11-08 21:27:54,781 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8299640
+INFO    2019-11-08 21:27:54,781 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8299640
+ERROR   2019-11-08 21:27:54,781 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Perigo
+ERROR   2019-11-08 21:27:54,781 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Perigo
+INFO    2019-11-08 21:30:43,424 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8538031
+INFO    2019-11-08 21:30:44,510 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 14,5%
+INFO    2019-11-08 21:30:44,853 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8540484
+INFO    2019-11-08 21:30:45,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 50,9%
+INFO    2019-11-08 21:30:46,304 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8542515
+INFO    2019-11-08 21:30:46,304 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:8542515
+INFO    2019-11-08 21:30:47,334 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 14,5%
+INFO    2019-11-08 21:30:47,334 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 14,5%
