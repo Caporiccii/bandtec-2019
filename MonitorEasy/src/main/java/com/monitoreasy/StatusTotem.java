@@ -5,6 +5,7 @@
  */
 package com.monitoreasy;
 
+import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
 
 /**
@@ -13,15 +14,17 @@ import oshi.SystemInfo;
  */
 public class StatusTotem {
 
+    ConexaoBanco con = new ConexaoBanco();
     SystemInfo sistemaInfo = new SystemInfo();
     double tempoAtivo;
     String statusTotem;
-
+ JdbcTemplate jdbcTemplate
+            = new JdbcTemplate(con.getDataSource());
     public double getTempoAtivo() {
         tempoAtivo = sistemaInfo.getHardware().getProcessor().getSystemUptime();
 
         System.out.println(tempoAtivo);
-
+ 
         return tempoAtivo;
     }
 
@@ -31,6 +34,9 @@ public class StatusTotem {
         } else {
             statusTotem = "Totem Ativo";
         }
+        jdbcTemplate.update(
+                "   insert into [dbo].[Registers] (activeTime,status) values (?,?)",
+               tempoAtivo,statusTotem);
         return statusTotem;
     }
 

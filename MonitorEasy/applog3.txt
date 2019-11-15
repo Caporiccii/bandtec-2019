@@ -24,3 +24,549 @@ INFO    2019-11-11 18:50:52,339 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  -
 INFO    2019-11-11 18:50:52,339 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Estado processos:902890
 INFO    2019-11-11 18:50:53,366 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 7,7%
 INFO    2019-11-11 18:50:53,366 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Uso atual 7,7%
+DEBUG   2019-11-14 18:59:04,120 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 18:59:04,135 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 18:59:04,182 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 18:59:04,182 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 18:59:04,214 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 18:59:04,214 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 18:59:05,261 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 18:59:05,323 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 18:59:05,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 18:59:05,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 18:59:05,901 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 18:59:05,979 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 18:59:34,590 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 18:59:34,637 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 18:59:34,637 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 18:59:35,668 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 18:59:35,762 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 18:59:35,871 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:21:29,299 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:21:29,346 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:21:29,346 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:21:30,409 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:21:30,518 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:21:30,580 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:21:31,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:21:31,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:21:31,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:21:32,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:21:32,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:21:32,315 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:21:33,049 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:21:33,049 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:21:33,096 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:21:33,096 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:21:33,096 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:21:33,096 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:21:34,112 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:21:34,112 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:21:34,127 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:21:34,127 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:21:34,159 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:21:34,159 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:30:53,918 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:30:53,918 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:30:53,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:30:53,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:30:53,965 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:30:53,965 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:30:54,996 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:54,996 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:30:55,074 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:30:55,074 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:30:55,121 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:55,121 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:30:55,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:56,981 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:30:57,668 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:30:57,668 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:30:57,668 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:30:57,668 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:30:57,715 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:30:58,747 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,747 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,747 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,747 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:30:58,793 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:30:58,793 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:30:58,793 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:30:58,793 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:30:58,825 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,825 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,825 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:30:58,825 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:31:58,645 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:31:58,645 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:31:58,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:31:58,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:31:58,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:31:58,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:31:59,724 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:31:59,724 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:31:59,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:31:59,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:31:59,849 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:31:59,849 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:32:01,020 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:32:01,020 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:32:01,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:32:01,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:32:01,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:32:01,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:02,036 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 19:32:03,317 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:32:03,317 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:32:03,317 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 19:32:03,317 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 19:32:03,349 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 19:32:04,364 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,364 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,364 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,364 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 19:32:04,411 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:32:04,411 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:32:04,411 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 19:32:04,411 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 19:32:04,443 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,443 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,443 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 19:32:04,443 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 20:44:55,094 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 20:44:55,094 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 20:44:55,138 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 20:44:55,138 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 20:44:55,139 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 20:44:55,139 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 20:44:56,174 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:44:56,174 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 20:44:56,285 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 20:44:56,285 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 20:44:56,360 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:44:56,360 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 20:44:57,159 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 20:44:57,159 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 20:44:57,161 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 20:44:57,161 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 20:44:57,161 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 20:44:57,161 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 20:44:58,165 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:44:58,165 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 20:44:58,166 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 20:44:58,166 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 20:44:58,166 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:44:58,166 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 20:44:59,828 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 20:44:59,828 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 20:44:59,828 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 20:44:59,828 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 20:44:59,847 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 20:44:59,847 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 20:44:59,847 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 20:44:59,847 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 20:44:59,848 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 20:44:59,848 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 20:44:59,848 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 20:44:59,848 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 20:45:00,873 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,873 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,873 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,873 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 20:45:00,920 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 20:45:00,920 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 20:45:00,920 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 20:45:00,920 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 20:45:00,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 20:45:00,949 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:03:17,671 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:03:17,671 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:03:17,705 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:03:17,705 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:03:17,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:03:17,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:03:18,749 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:18,749 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:03:18,845 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:03:18,845 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:03:18,923 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:18,923 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:03:19,811 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:03:19,811 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:03:19,812 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:03:19,812 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:03:19,813 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:03:19,813 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:03:20,816 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:20,816 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:03:20,817 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:03:20,817 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:03:20,817 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:20,817 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:03:21,808 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:03:21,808 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:03:21,808 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:03:21,808 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:03:21,832 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:03:22,851 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,851 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,851 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,851 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:03:22,905 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:03:22,905 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:03:22,905 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:03:22,905 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:03:22,939 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,939 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,939 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:03:22,939 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:23:26,942 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:26,942 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:26,942 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:26,978 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:23:28,008 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:28,008 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:28,008 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:23:28,117 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:28,117 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:28,117 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:23:28,199 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:28,199 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:28,199 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:23:29,461 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:29,461 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:29,461 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:23:29,463 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:29,463 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:29,463 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:23:29,464 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:29,464 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:29,464 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:23:30,469 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:30,469 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:30,469 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:23:30,470 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:30,470 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:30,470 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:23:30,471 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:30,471 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:30,471 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:23:31,758 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:23:31,863 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:23:31,864 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,884 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:23:32,933 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:23:32,964 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:44:37,021 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:37,021 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:37,021 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:37,021 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:37,021 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:44:37,075 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:37,075 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:37,075 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:37,075 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:37,075 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:44:37,076 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:37,076 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:37,076 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:37,076 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:37,076 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:44:38,113 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,113 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,113 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,113 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,113 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:44:38,200 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:38,200 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:38,200 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:38,200 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:38,200 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:44:38,277 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,277 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,277 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,277 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:38,277 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:44:39,384 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:39,384 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:39,384 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:39,384 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:39,384 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:44:39,386 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:39,386 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:39,386 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:39,386 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:39,386 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:44:39,387 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:39,387 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:39,387 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:39,387 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:39,387 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:44:40,393 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,393 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,393 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,393 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,393 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:44:40,396 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:40,396 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:40,396 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:40,396 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:40,396 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:44:40,398 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,398 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,398 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,398 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:40,398 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 21:44:41,728 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 21:44:41,750 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 21:44:41,751 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,774 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 21:44:42,827 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 21:44:42,861 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 22:00:32,646 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:32,646 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:32,646 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:32,646 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:32,646 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 22:00:32,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:32,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:32,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:32,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:32,682 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 22:00:32,683 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:32,683 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:32,683 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:32,683 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:32,683 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 22:00:33,717 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,717 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,717 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,717 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,717 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 22:00:33,803 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:33,803 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:33,803 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:33,803 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:33,803 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 22:00:33,869 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,869 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,869 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,869 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:33,869 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 22:00:35,342 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:35,342 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:35,342 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:35,342 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:35,342 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 22:00:35,345 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:35,345 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:35,345 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:35,345 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:35,345 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 22:00:35,347 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:35,347 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:35,347 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:35,347 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:35,347 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 22:00:36,353 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,353 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,353 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,353 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,353 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 22:00:36,355 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:36,355 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:36,355 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:36,355 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:36,355 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 22:00:36,357 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,357 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,357 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,357 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:36,357 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+DEBUG   2019-11-14 22:00:37,647 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando quantidade de processos
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+INFO    2019-11-14 22:00:37,675 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturado com sucesso!!
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+DEBUG   2019-11-14 22:00:37,677 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando uso de CPU
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,706 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+ERROR   2019-11-14 22:00:38,756 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturando Informação do Hardware
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
+INFO    2019-11-14 22:00:38,786 [AWT-EventQueue-0] com.monitoreasy.LogMonitor  - Capturada com sucesso!!
