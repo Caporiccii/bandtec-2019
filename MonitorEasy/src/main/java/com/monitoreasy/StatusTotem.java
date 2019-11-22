@@ -15,6 +15,7 @@ import oshi.SystemInfo;
 public class StatusTotem {
 
     ConexaoBanco con = new ConexaoBanco();
+    Statements statements = new Statements();
     SystemInfo sistemaInfo = new SystemInfo();
     double tempoAtivo;
     String statusTotem;
@@ -34,9 +35,7 @@ public class StatusTotem {
         } else {
             statusTotem = "Totem Ativo";
         }
-        jdbcTemplate.update(
-                "   insert into [dbo].[Registers] (activeTime,status) values (?,?)",
-               tempoAtivo,statusTotem);
+        
         return statusTotem;
     }
 

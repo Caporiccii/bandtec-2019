@@ -19,8 +19,9 @@ public class Monitor extends javax.swing.JFrame {
     private final Cpu cpu;
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;  
+    private final Statements statements;
     LogMonitor logger = new LogMonitor();
-    Statements query = new Statements();
+    
     
 
     public final void mostraDados() {
@@ -42,7 +43,7 @@ public class Monitor extends javax.swing.JFrame {
         cpu = new Cpu(log);
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
-        query.InsertMemoria();
+        
         initComponents();
         
         mostraDados();

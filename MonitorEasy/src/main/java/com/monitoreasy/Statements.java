@@ -1,26 +1,21 @@
 package com.monitoreasy;
 
-import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
+import java.util.Date;
 
 public class Statements {
 
-    ConexaoBanco con = new ConexaoBanco();
-    private final Memory memoria;
-
-    public Statements() {
-    memoria = new Memory();
-    }
-
-    JdbcTemplate jdbcTemplate
-            = new JdbcTemplate(con.getDataSource());
-
-    public void InsertMemoria() {
-
-     int a =  jdbcTemplate.update(
-                "   insert into [dbo].[Registers] (avaliableMemory) values (?)",
-                memoria.memoriaTotal);
+    public String sql;
+    
+    public String insertRegistro(Integer memoriaDisponivel, Integer memoriaTotal
+    ,Integer memory, Integer totalProcess,Integer cpu, Integer infoH,
+    Integer activeTime,String status,String memoryUnit,
+    String cpuUnit, String diskUnit,Date moment){ 
         
+       sql = "   insert into Registers "
+            + "(avaliableMemory,totalMemory,memory,totalProcess,cpu,"
+            + "infoHardware,activeTime,status,memoryUnit\n"
+            + ",cpuUnit,diskUnit,moment) values (?,?,?,?,?,?,?,?,?,?,?,?)";
+       
+       return sql;
     }
-
 }

@@ -9,9 +9,9 @@ public class Memory {
 
     SystemInfo sistemaInfo = new SystemInfo();
     ConexaoBanco con = new ConexaoBanco();
-    long memoriaDisponivel;
-    long memoriaTotal;
-    String monitorMemoria;
+    public long memoriaDisponivel;
+    public long memoriaTotal;
+    public String monitorMemoria;
     private final SystemInfo systemInfo;
     private final GlobalMemory memoria;
         JdbcTemplate jdbcTemplate

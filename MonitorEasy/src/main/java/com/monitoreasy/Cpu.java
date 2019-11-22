@@ -11,9 +11,11 @@ public class Cpu {
     SystemInfo sistemaInfo = new SystemInfo();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
     private final Logger logger;
+    
     String cpu;
     public Cpu(Logger logger) {
         this.logger = logger;
+        
     }
     public String getCpu(CentralProcessor media) {
         try{
