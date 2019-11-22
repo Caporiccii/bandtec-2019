@@ -32,6 +32,7 @@ public class Monitor extends javax.swing.JFrame {
         status.getTempoAtivo();
         labelStatusTotem2.setText(status.getStatusTotem());
         areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));
+        statements.insertRegistro(memoria.memoriaTotal, NORMAL, ERROR, PROPERTIES, WIDTH, WIDTH, WIDTH, status, memoryUnit, cpuUnit, diskUnit, moment);
     }
 
     public Monitor() {
@@ -43,7 +44,7 @@ public class Monitor extends javax.swing.JFrame {
         cpu = new Cpu(log);
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
-        
+        statements = new Statements();
         initComponents();
         
         mostraDados();

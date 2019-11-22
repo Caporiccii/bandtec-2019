@@ -35,7 +35,9 @@ public class StatusTotem {
         } else {
             statusTotem = "Totem Ativo";
         }
-        
+        jdbcTemplate.update(
+                "   insert into [dbo].[Registers] (activeTime,status) values (?,?)",
+               tempoAtivo,statusTotem);
         return statusTotem;
     }
 
