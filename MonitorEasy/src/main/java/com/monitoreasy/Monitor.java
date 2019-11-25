@@ -7,9 +7,10 @@ package com.monitoreasy;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.Date;
 import org.apache.log4j.Logger;
 import oshi.SystemInfo;
-import oshi.hardware.GlobalMemory;
+//import oshi.hardware.GlobalMemory;
 
 public class Monitor extends javax.swing.JFrame {
 
@@ -20,6 +21,7 @@ public class Monitor extends javax.swing.JFrame {
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;  
     private final Statements statements;
+    Date hora;
     LogMonitor logger = new LogMonitor();
     
     
@@ -32,7 +34,8 @@ public class Monitor extends javax.swing.JFrame {
         status.getTempoAtivo();
         labelStatusTotem2.setText(status.getStatusTotem());
         areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));
-        statements.insertRegistro(memoria.memoriaTotal, NORMAL, ERROR, PROPERTIES, WIDTH, WIDTH, WIDTH, status, memoryUnit, cpuUnit, diskUnit, moment);
+      statements.insertRegistro(memoria.memoriaDisponivel,memoria.memoriaTotal, Integer.valueOf(processos.processos), Integer.valueOf(cpu.cpu), informacaoHardware.nameComputer, (int) status.tempoAtivo, 
+                status.statusTotem,hora);
     }
 
     public Monitor() {
