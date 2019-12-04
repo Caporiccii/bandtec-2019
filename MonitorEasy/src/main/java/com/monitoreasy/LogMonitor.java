@@ -10,7 +10,7 @@ public class LogMonitor {
     Logger logger;
 
     public LogMonitor() {
-        //logger = Logger.getLogger(LogMonitor.class);
+        logger = Logger.getLogger(LogMonitor.class);
         // cria objeto para utilização do logger
         BasicConfigurator.configure();
 

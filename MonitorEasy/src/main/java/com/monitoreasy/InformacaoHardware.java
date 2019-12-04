@@ -26,7 +26,7 @@ public class InformacaoHardware {
         this.logger = logger;
     }
 
-    public String getInfoHardware(ComputerSystem nome) {
+    public String getInfoHardware() {
         try{
             logger.error("Capturando Informação do Hardware");
          nameComputer = hardwareAbstracao.getComputerSystem().getManufacturer();

@@ -9,8 +9,8 @@ public class Memory {
 
     SystemInfo sistemaInfo = new SystemInfo();
     ConexaoBanco con = new ConexaoBanco();
-    public long memoriaDisponivel;
-    public long memoriaTotal;
+    public double memoriaDisponivel;
+    public double memoriaTotal;
     public String monitorMemoria;
     private final SystemInfo systemInfo;
     private final GlobalMemory memoria;
@@ -25,15 +25,20 @@ public class Memory {
 
     public String getMemory() {
 
-        memoriaDisponivel = memoria.getAvailable()*100;
-        memoriaTotal = memoria.getTotal()*100;
-        monitorMemoria = String.format("Total:%s Disponivel:%s",
-                FormatUtil.formatBytes(memoriaTotal),
-                FormatUtil.formatBytes(memoriaDisponivel));
+        memoriaDisponivel = memoria.getAvailable();
+        memoriaTotal = memoria.getTotal();
+        monitorMemoria = String.format("Total:%s Disponivel:%s",memoriaTotal,memoriaDisponivel);
+            
                     
-       // jdbcTemplate.update(
-         //       "   insert into [dbo].[Registers] (avaliableMemory,totalMemory) values (?,?)",
-           //    memoriaDisponivel,memoriaTotal);
+        jdbcTemplate.update(
+            "   insert into [dbo].[Registers] (avaliableMemory,totalMemory) values (?,?)",
+              memoriaDisponivel,memoriaTotal);
         return monitorMemoria;
     }
+       public Double getMemoryAvailable(){
+         memoriaDisponivel = memoria.getAvailable();
+           System.out.println("FOI"+memoriaDisponivel);
+           return memoriaDisponivel;
+       }
+       
 }

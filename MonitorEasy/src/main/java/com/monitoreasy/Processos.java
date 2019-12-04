@@ -25,6 +25,7 @@ public class Processos {
     String processos;
     int n = 5;
     GlobalMemory memoria;
+     long[] processadorAtual;
     private final Logger logger;
     private final SystemInfo systemInfo;
 
@@ -37,7 +38,8 @@ public class Processos {
     public String getProcessor(CentralProcessor processo) {
         try {
             logger.debug("Capturando quantidade de processos");
-            long[] processadorAtual = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
+            processadorAtual = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
+          ;
             processoTotal = "Quantidade de processos:" + processadorAtual[0];
 
             logger.info("Capturado com sucesso!!");

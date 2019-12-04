@@ -11,7 +11,7 @@ public class Cpu {
     SystemInfo sistemaInfo = new SystemInfo();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
     private final Logger logger;
-    
+    double cpu1;
     String cpu;
     public Cpu(Logger logger) {
         this.logger = logger;
@@ -30,5 +30,12 @@ public class Cpu {
         logger.error("Erro ao capturar uso de CPU" + ex);
         }
         return cpu;
+    }
+    
+    public Double getCpuInt(CentralProcessor media){
+         long[] prevTicks = hardwareAbstracao.getProcessor().getSystemCpuLoadTicks();
+        Util.sleep(1000);
+        cpu1 = media.getSystemCpuLoadBetweenTicks()*100;
+        return cpu1;
     }
 }

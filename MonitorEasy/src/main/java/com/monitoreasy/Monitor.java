@@ -9,6 +9,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.Date;
 import org.apache.log4j.Logger;
+import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
 //import oshi.hardware.GlobalMemory;
 
@@ -20,22 +21,31 @@ public class Monitor extends javax.swing.JFrame {
     private final Cpu cpu;
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;  
-    private final Statements statements;
+
     Date hora;
     LogMonitor logger = new LogMonitor();
-    
+        ConexaoBanco con = new ConexaoBanco();
+    JdbcTemplate jdbcTemplate
+            = new JdbcTemplate(con.getDataSource());
     
 
     public final void mostraDados() {
         labelMemoria.setText(memoria.getMemory());
         labelQuantidadeProcessos.setText(processos.getProcessor(systemInfo.getHardware().getProcessor()));
         labelCPUToda.setText(cpu.getCpu(systemInfo.getHardware().getProcessor()));
-        labelTotemResultado.setText(informacaoHardware.getInfoHardware(systemInfo.getHardware().getComputerSystem()));
+        labelTotemResultado.setText(informacaoHardware.getInfoHardware());
         status.getTempoAtivo();
+        informacaoHardware.getInfoHardware();
+        memoria.getMemoryAvailable();
         labelStatusTotem2.setText(status.getStatusTotem());
         areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));
-      statements.insertRegistro(memoria.memoriaDisponivel,memoria.memoriaTotal, Integer.valueOf(processos.processos), Integer.valueOf(cpu.cpu), informacaoHardware.nameComputer, (int) status.tempoAtivo, 
-                status.statusTotem,hora);
+     
+    }
+    public void insertRegistro() {
+
+         jdbcTemplate.update("insert into Registers (avaliableMemory,totalMemory,cpu,"
+                + "infoHardware,activeTime,status,moment) values (?,?,?,?,?,?,?)",memoria.memoriaDisponivel,memoria.memoriaTotal, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora);     
+              
     }
 
     public Monitor() {
@@ -47,10 +57,11 @@ public class Monitor extends javax.swing.JFrame {
         cpu = new Cpu(log);
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
-        statements = new Statements();
-        initComponents();
         
+        initComponents();
+     
         mostraDados();
+        
     }
 
     @SuppressWarnings("unchecked")
