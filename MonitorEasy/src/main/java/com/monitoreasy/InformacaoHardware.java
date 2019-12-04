@@ -22,6 +22,7 @@ public class InformacaoHardware {
     OperatingSystem os = sistemaInfo.getOperatingSystem();
     HardwareAbstractionLayer hardwareAbstracao = sistemaInfo.getHardware();
     String nameComputer;
+    String serialNumber;
     public InformacaoHardware(Logger logger) {
         this.logger = logger;
     }
@@ -37,5 +38,17 @@ public class InformacaoHardware {
             logger.error("Erro ao capturar Informação Hardware: " + ex);
         }
         return nameComputer;
+    }
+        public String getSerialNumber() {
+        try{
+            logger.error("Capturando Informação do Hardware");
+         serialNumber = hardwareAbstracao.getComputerSystem().getSerialNumber();
+        logger.info("Capturada com sucesso!!");
+        }
+        catch(Exception ex)
+        {
+            logger.error("Erro ao capturar Informação Hardware: " + ex);
+        }
+        return serialNumber;
     }
 }

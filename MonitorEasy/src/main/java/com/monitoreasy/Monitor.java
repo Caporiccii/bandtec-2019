@@ -11,6 +11,7 @@ import java.util.Date;
 import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
+import oshi.util.FormatUtil;
 //import oshi.hardware.GlobalMemory;
 
 public class Monitor extends javax.swing.JFrame {
@@ -36,6 +37,7 @@ public class Monitor extends javax.swing.JFrame {
         labelTotemResultado.setText(informacaoHardware.getInfoHardware());
         status.getTempoAtivo();
         informacaoHardware.getInfoHardware();
+        informacaoHardware.getSerialNumber();
         memoria.getMemoryAvailable();
         cpu.getCpuInt(systemInfo.getHardware().getProcessor());
         labelStatusTotem2.setText(status.getStatusTotem());
@@ -44,8 +46,11 @@ public class Monitor extends javax.swing.JFrame {
     }
     public final void insertRegistro() {
  try{
-         jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,cpu,"
-                + "infoHardware,activeTime,status,moment) values (?,?,?,?,?,?,?)",memoria.memoriaDisponivel,memoria.memoriaTotal, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora);     
+         jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,totemId,cpu,"
+                + "infoHardware,activeTime,status,moment) values (?,?,?,?,?,?,?,?)",memoria.memoriaDisponivel,
+                memoria.memoriaTotal,54, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora);
+         jdbcTemplate.update("insert into [dbo].[Totems] (name,serialNumber,stationId,active) values (?,?,?,?)",
+                 informacaoHardware.nameComputer,informacaoHardware.serialNumber,8,status.statusTotem);
  }
  catch(Exception ex)
  {
