@@ -27,12 +27,9 @@ public class Memory {
 
         memoriaDisponivel = memoria.getAvailable();
         memoriaTotal = memoria.getTotal();
-        monitorMemoria = String.format("Total:%s Disponivel:%s",memoriaTotal,memoriaDisponivel);
+        monitorMemoria = String.format("Total:%s Disponivel:%s",(FormatUtil.formatBytes((long) memoriaTotal)),FormatUtil.formatBytes((long)memoriaDisponivel));
             
-                    
-        jdbcTemplate.update(
-            "   insert into [dbo].[Registers] (avaliableMemory,totalMemory) values (?,?)",
-              memoriaDisponivel,memoriaTotal);
+                  
         return monitorMemoria;
     }
        public Double getMemoryAvailable(){

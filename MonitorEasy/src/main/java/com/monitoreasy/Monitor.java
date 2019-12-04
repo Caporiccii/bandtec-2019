@@ -22,7 +22,7 @@ public class Monitor extends javax.swing.JFrame {
     private final Processos processos;
     private final InformacaoHardware informacaoHardware;  
 
-    Date hora;
+    private final Date hora;
     LogMonitor logger = new LogMonitor();
         ConexaoBanco con = new ConexaoBanco();
     JdbcTemplate jdbcTemplate
@@ -37,15 +37,20 @@ public class Monitor extends javax.swing.JFrame {
         status.getTempoAtivo();
         informacaoHardware.getInfoHardware();
         memoria.getMemoryAvailable();
+        cpu.getCpuInt(systemInfo.getHardware().getProcessor());
         labelStatusTotem2.setText(status.getStatusTotem());
-        areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));
+        areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));      
      
     }
-    public void insertRegistro() {
-
-         jdbcTemplate.update("insert into Registers (avaliableMemory,totalMemory,cpu,"
+    public final void insertRegistro() {
+ try{
+         jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,cpu,"
                 + "infoHardware,activeTime,status,moment) values (?,?,?,?,?,?,?)",memoria.memoriaDisponivel,memoria.memoriaTotal, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora);     
-              
+ }
+ catch(Exception ex)
+ {
+     System.out.println("Erro"+ex);
+ }
     }
 
     public Monitor() {
@@ -57,10 +62,10 @@ public class Monitor extends javax.swing.JFrame {
         cpu = new Cpu(log);
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
-        
+        hora = new Date();
         initComponents();
-     
         mostraDados();
+        insertRegistro();
         
     }
 
