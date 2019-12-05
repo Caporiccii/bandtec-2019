@@ -24,7 +24,7 @@ public class InformacaoHardware {
     String nameComputer;
     String serialNumber;
     public InformacaoHardware(Logger logger) {
-        this.logger = logger;
+        this.logger = Logger.getLogger(InformacaoHardware.class);
     }
 
     public String getInfoHardware() {

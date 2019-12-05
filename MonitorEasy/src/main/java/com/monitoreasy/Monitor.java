@@ -15,7 +15,7 @@ import oshi.SystemInfo;
 import oshi.util.FormatUtil;
 //import oshi.hardware.GlobalMemory;
 
-public class Monitor extends javax.swing.JFrame {
+public final class Monitor extends javax.swing.JFrame {
 
     private final StatusTotem status;
     private final SystemInfo systemInfo;
@@ -27,45 +27,43 @@ public class Monitor extends javax.swing.JFrame {
 
     private final Date hora;
     LogMonitor logger = new LogMonitor();
-        ConexaoBanco con = new ConexaoBanco();
+    ConexaoBanco con = new ConexaoBanco();
     JdbcTemplate jdbcTemplate
             = new JdbcTemplate(con.getDataSource());
-    
 
     public final void mostraDados() {
         labelMemoria.setText(memoria.getMemory());
         labelQuantidadeProcessos.setText(processos.getProcessor(systemInfo.getHardware().getProcessor()));
         labelCPUToda.setText(cpu.getCpu(systemInfo.getHardware().getProcessor()));
-        labelTotemResultado.setText(informacaoHardware.getInfoHardware());
+        labelTotemResultado.setText(informacaoHardware.getSerialNumber());
         status.getTempoAtivo();
         informacaoHardware.getInfoHardware();
         informacaoHardware.getSerialNumber();
         memoria.getMemoryAvailable();
         cpu.getCpuInt(systemInfo.getHardware().getProcessor());
         labelStatusTotem2.setText(status.getStatusTotem());
-        areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));      
-     
+        areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));
+
     }
-    public void mensagens(){
+
+    public void mensagens() {
         try {
             mensagem.geraAlerta(cpu.cpu1, memoria.memoriaAtual);
         } catch (Exception ex) {
             java.util.logging.Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     public final void insertRegistro() {
- try{
-         jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,totemId,cpu,"
-                + "infoHardware,activeTime,status,moment,memory,memoryUnit,cpuUnit,diskUnit) values (?,?,?,?,?,?,?,?,?,?,?,?)",memoria.memoriaDisponivel/1000000000,
-                memoria.memoriaTotal/1000000000,54, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora,memoria.memoriaAtual,"MB","MB","MB");
-         jdbcTemplate.update("insert into [dbo].[Totems] (name,serialNumber,stationId,active) values (?,?,?,?)",
-                 informacaoHardware.nameComputer,informacaoHardware.serialNumber,10,status.statusTotem);
- }
- catch(Exception ex)
- {
-     System.out.println("Erro"+ex);
- }
+        try {
+            jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,totemId,cpu,"
+                    + "infoHardware,activeTime,status,moment,memory,memoryUnit,cpuUnit,diskUnit) values (?,?,?,?,?,?,?,?,?,?,?,?)", memoria.memoriaDisponivel / 1000000000,
+                    memoria.memoriaTotal / 1000000000, 54, cpu.cpu1, informacaoHardware.nameComputer, (int) status.tempoAtivo, status.statusTotem, hora, memoria.memoriaAtual, "MB", "MB", "MB");
+            jdbcTemplate.update("insert into [dbo].[Totems] (name,serialNumber,stationId,active) values (?,?,?,?)",
+                    informacaoHardware.nameComputer, informacaoHardware.serialNumber, 10, status.statusTotem);
+        } catch (Exception ex) {
+            System.out.println("Erro" + ex);
+        }
     }
 
     public Monitor() {
@@ -73,7 +71,7 @@ public class Monitor extends javax.swing.JFrame {
         Logger log = logger.getLogger();
         systemInfo = new SystemInfo();
         memoria = new Memory();
-        status = new StatusTotem();
+        status = new StatusTotem(log);
         cpu = new Cpu(log);
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
@@ -83,7 +81,7 @@ public class Monitor extends javax.swing.JFrame {
         mostraDados();
         insertRegistro();
         mensagens();
-        
+
     }
 
     @SuppressWarnings("unchecked")
@@ -93,7 +91,6 @@ public class Monitor extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         labelStatusTotem2 = new javax.swing.JLabel();
         labelNomeMemoria = new javax.swing.JLabel();
-        labelMemoria = new javax.swing.JLabel();
         labelProcessos = new javax.swing.JLabel();
         labelQuantidadeProcessos = new javax.swing.JLabel();
         labelCPU = new javax.swing.JLabel();
@@ -104,6 +101,7 @@ public class Monitor extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         areaProcessos = new javax.swing.JTextArea();
+        labelMemoria = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,9 +114,6 @@ public class Monitor extends javax.swing.JFrame {
         labelNomeMemoria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         labelNomeMemoria.setForeground(new java.awt.Color(255, 255, 255));
         labelNomeMemoria.setText("Memória:");
-
-        labelMemoria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        labelMemoria.setForeground(new java.awt.Color(255, 255, 255));
 
         labelProcessos.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         labelProcessos.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,88 +146,87 @@ public class Monitor extends javax.swing.JFrame {
         areaProcessos.setRows(5);
         jScrollPane1.setViewportView(areaProcessos);
 
+        labelMemoria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelMemoria.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(labelProcessos)
-                                .addGap(18, 18, 18))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelStatusTotem)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(labelTotem)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(labelNomeMemoria)
-                                            .addComponent(labelCPU))))
-                                .addGap(33, 33, 33)))
+                            .addComponent(labelStatusTotem)
+                            .addComponent(labelTotem))
+                        .addGap(27, 27, 27)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labelStatusTotem2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelCPUToda, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(labelTotemResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(labelQuantidadeProcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(labelTotemResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelStatusTotem2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(95, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelCPU)
+                            .addComponent(labelProcessos)
+                            .addComponent(labelNomeMemoria))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelQuantidadeProcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelCPUToda, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(15, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelStatusTotem2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelStatusTotem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(labelTotemResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(labelTotem))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(labelCPU)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelNomeMemoria))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(labelQuantidadeProcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(23, 23, 23)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelStatusTotem, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(labelStatusTotem2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelTotem)
+                                    .addComponent(labelTotemResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(labelNomeMemoria)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(labelProcessos))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(labelMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(labelQuantidadeProcessos, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(labelCPUToda, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(labelProcessos)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelCPU)
-                        .addGap(19, 19, 19))))
+                        .addComponent(labelCPUToda, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 39, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -242,12 +236,12 @@ public class Monitor extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Monitor monitor = new Monitor();
-              //  monitor.mostraDados();
+                //  monitor.mostraDados();
                 new Monitor().setVisible(true);
                 monitor.addWindowListener(new WindowListener() {
                     @Override
                     public void windowOpened(WindowEvent arg0) {
-                //        monitor.mostraDados();
+                        //        monitor.mostraDados();
 
                         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
                     }

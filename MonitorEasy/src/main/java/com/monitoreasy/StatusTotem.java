@@ -5,6 +5,7 @@
  */
 package com.monitoreasy;
 
+import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
 
@@ -14,17 +15,26 @@ import oshi.SystemInfo;
  */
 public class StatusTotem {
 
-    ConexaoBanco con = new ConexaoBanco();
+    
     SystemInfo sistemaInfo = new SystemInfo();
     double tempoAtivo;
     String statusTotem;
- JdbcTemplate jdbcTemplate
-            = new JdbcTemplate(con.getDataSource());
+    private final Logger logger;
+
+    public StatusTotem(Logger logger) {
+        this.logger = Logger.getLogger(StatusTotem.class);
+    }
+    
     public double getTempoAtivo() {
+        try{
         tempoAtivo = sistemaInfo.getHardware().getProcessor().getSystemUptime();
 
         System.out.println(tempoAtivo);
- 
+        logger.debug("Capturando tempo ativo");
+        }
+        catch(Exception ex){
+            logger.error(ex);
+        }
         return tempoAtivo;
     }
 

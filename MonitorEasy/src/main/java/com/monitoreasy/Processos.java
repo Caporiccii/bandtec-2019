@@ -30,7 +30,7 @@ public class Processos {
     private final SystemInfo systemInfo;
 
     public Processos(Logger logger) {
-        this.logger = logger;
+        this.logger = Logger.getLogger(Processos.class);;
         systemInfo = new SystemInfo();
         memoria = systemInfo.getHardware().getMemory();
     }
