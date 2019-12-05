@@ -11,6 +11,7 @@ public class Memory {
     ConexaoBanco con = new ConexaoBanco();
     public double memoriaDisponivel;
     public double memoriaTotal;
+    public double memoriaAtual;
     public String monitorMemoria;
     private final SystemInfo systemInfo;
     private final GlobalMemory memoria;
@@ -27,13 +28,15 @@ public class Memory {
 
         memoriaDisponivel = memoria.getAvailable();
         memoriaTotal = memoria.getTotal();
+        memoriaAtual = memoria.getSwapUsed();
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAA"+memoriaAtual);
         monitorMemoria = String.format("Total:%s Disponivel:%s",(FormatUtil.formatBytes((long) memoriaTotal)),FormatUtil.formatBytes((long)memoriaDisponivel));
             
                   
         return monitorMemoria;
     }
        public Double getMemoryAvailable(){
-         memoriaDisponivel = memoria.getAvailable();
+         memoriaDisponivel = memoria.getAvailable()*100;
            System.out.println("FOI"+memoriaDisponivel);
            return memoriaDisponivel;
        }

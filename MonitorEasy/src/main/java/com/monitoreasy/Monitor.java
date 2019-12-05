@@ -8,6 +8,7 @@ package com.monitoreasy;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.Date;
+import java.util.logging.Level;
 import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
@@ -21,7 +22,8 @@ public class Monitor extends javax.swing.JFrame {
     private final Memory memoria;
     private final Cpu cpu;
     private final Processos processos;
-    private final InformacaoHardware informacaoHardware;  
+    private final InformacaoHardware informacaoHardware;
+    private final Mensagens mensagem;
 
     private final Date hora;
     LogMonitor logger = new LogMonitor();
@@ -44,13 +46,21 @@ public class Monitor extends javax.swing.JFrame {
         areaProcessos.setText(processos.getProcessos(systemInfo.getHardware().getMemory()));      
      
     }
+    public void mensagens(){
+        try {
+            mensagem.geraAlerta(cpu.cpu1, memoria.memoriaAtual);
+        } catch (Exception ex) {
+            java.util.logging.Logger.getLogger(Monitor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     public final void insertRegistro() {
  try{
          jdbcTemplate.update("insert into [dbo].[Registers] (avaliableMemory,totalMemory,totemId,cpu,"
-                + "infoHardware,activeTime,status,moment) values (?,?,?,?,?,?,?,?)",memoria.memoriaDisponivel,
-                memoria.memoriaTotal,54, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora);
+                + "infoHardware,activeTime,status,moment,memory,memoryUnit,cpuUnit,diskUnit) values (?,?,?,?,?,?,?,?,?,?,?,?)",memoria.memoriaDisponivel/1000000000,
+                memoria.memoriaTotal/1000000000,54, cpu.cpu1, informacaoHardware.nameComputer, (int)status.tempoAtivo,status.statusTotem,hora,memoria.memoriaAtual,"MB","MB","MB");
          jdbcTemplate.update("insert into [dbo].[Totems] (name,serialNumber,stationId,active) values (?,?,?,?)",
-                 informacaoHardware.nameComputer,informacaoHardware.serialNumber,8,status.statusTotem);
+                 informacaoHardware.nameComputer,informacaoHardware.serialNumber,10,status.statusTotem);
  }
  catch(Exception ex)
  {
@@ -68,9 +78,11 @@ public class Monitor extends javax.swing.JFrame {
         processos = new Processos(log);
         informacaoHardware = new InformacaoHardware(log);
         hora = new Date();
+        mensagem = new Mensagens();
         initComponents();
         mostraDados();
         insertRegistro();
+        mensagens();
         
     }
 
@@ -230,12 +242,12 @@ public class Monitor extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Monitor monitor = new Monitor();
-                monitor.mostraDados();
+              //  monitor.mostraDados();
                 new Monitor().setVisible(true);
                 monitor.addWindowListener(new WindowListener() {
                     @Override
                     public void windowOpened(WindowEvent arg0) {
-                        monitor.mostraDados();
+                //        monitor.mostraDados();
 
                         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
                     }
